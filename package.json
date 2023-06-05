@@ -4,6 +4,8 @@
   "description": "CyberGuard: Protegendo seu Mundo Digital com Habilidades Técnicas.",
   "main": "index.js",
   "scripts": {
+    "db:migrate": "npx prisma migrate dev --name user-entity --create-only && npx prisma generate",
+    "db:push": "npx prisma db push",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "test": "jest"
   },
