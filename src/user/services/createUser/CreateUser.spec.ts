@@ -5,10 +5,10 @@ describe("CreateUser", () => {
     it("should create a new user", async () => {
         const createUser = new CreateUser();
 
-        const name = "John Doe";
-        const email = "john.doe@example.com";
-        const id = 1;
-        const password = "mysecretpassword";
+        const name = "John Doe5";
+        const email = "john.doe@example.co5";
+        const id = 5;
+        const password = "mysecretpassword5";
 
         const user = await createUser.execute(name, email, id, password);
 
