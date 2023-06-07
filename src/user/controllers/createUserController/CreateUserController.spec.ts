@@ -3,7 +3,7 @@ import { CreateUserController } from "./CreateUser.controller";
 import { CreateUser } from "../../services/createUser/CreateUser.service";
 
 describe("CreateUserController", () => {
-  it("should create a new user", async () => {
+  it("should create a new user and verify if status http is 200", async () => {
     // Simulando a requisição
     const request = {
       body: {
