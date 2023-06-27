@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { DeleteUser } from "../../services/deleteUser/DeleteUser.service";
 
 class DeleteUserController {
-  async createUser(request: Request, response: Response) {
+  async deleteUser(request: Request, response: Response) {
     const { id } = request.params;
 
     const userId = parseInt(id);
